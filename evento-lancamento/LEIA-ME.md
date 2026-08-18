@@ -1,6 +1,6 @@
 # E-mail Marketing — Elo 28 · A noite de lançamento
 
-E-mail **institucional / retrospectiva do evento de lançamento** do Elo 28. Conta a noite pela ordem em que ela aconteceu (chegada → apresentação no palco → homenagens → show → time Bilfor) e fecha com um convite comercial leve: falar com um assessor.
+E-mail **institucional / retrospectiva do evento de lançamento** do Elo 28. Conta a noite pela ordem em que ela aconteceu (chegada → apresentação no palco → homenagens → show → time Bilfor) e fecha com um convite comercial leve: conhecer o empreendimento na landing page.
 
 Segue a mesma identidade dos e-mails anteriores do Elo 28: fundo bege `#F4EFE7`, container branco de 600px, tipografia **Quattrocento Sans**, kickers em dourado `#C98A3E`, botão âmbar `#FFBF6F` e texto em marrom `#260D03` / `#4A3B33`.
 
@@ -53,8 +53,10 @@ Ficaram de fora `BILFOR-1`, `BILFOR-543` e `BILFOR-583` (eram as polaroids, remo
 
 1. **Confirmar os 3 links.** Hoje todos apontam para `https://www.bilfor.com.br/elo-28`:
    - imagem do hero → landing do empreendimento;
-   - botão **FALAR COM UM ASSESSOR** → se quiser, troque por WhatsApp do comercial, ex.: `https://wa.me/55DDDNUMERO?text=Vi%20o%20lan%C3%A7amento%20do%20Elo%2028%20e%20quero%20falar%20com%20um%20assessor`;
-   - link secundário **Conhecer o Elo 28** → landing.
+   - botão **CONHEÇA O ELO 28** → landing page do empreendimento;
+   - link secundário **Solicitar mais informações** → landing (ou formulário/WhatsApp, se preferir).
+
+   O e-mail **não usa a palavra "assessor"** em nenhum lugar — a linguagem é "conheça" / "solicite mais informações".
 2. **Checar o texto do rodapé legal** com o jurídico da Bilfor — ele fala em "imagens de evento reais; perspectivas do empreendimento em desenvolvimento e meramente ilustrativas".
 3. **Autorização de imagem.** O e-mail mostra rostos de convidados, parceiros e do time. Confirmar com a Bilfor se todos assinaram o termo de uso de imagem do evento.
 4. **Quem subiu ao palco.** O texto do bloco de reconhecimento é propositalmente vago ("quem acreditou no Elo 28 desde o começo") porque não sabemos se são parceiros, imobiliárias ou clientes. Se a Bilfor confirmar quem são, dá pra nominar.
@@ -68,10 +70,12 @@ As imagens ficam no mesmo repositório dos e-mails anteriores, agora numa subpas
 rafaelas-web/elo28-email-lancamento/evento-lancamento/
 ```
 
+✅ **Já está tudo no ar** (commit `f56d3d7`). As 6 imagens, o HTML e o preview foram publicados em `evento-lancamento/`, e o `footer-logos.png` continua na raiz, reaproveitado dos e-mails anteriores. Todas as URLs abaixo responderam 200.
+
 **Passo a passo:**
-1. Suba **todos os `.jpg` desta pasta** para `evento-lancamento/` na raiz do repositório (o `footer-logos.png` já está hospedado na raiz e é reaproveitado — não precisa subir de novo).
+1. Copie o HTML: <https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/evento-lancamento/email-evento-lancamento.html>
 2. No RD Station: **Marketing > E-mails > Criar e-mail** → importar/criar a partir de HTML.
-3. Cole o conteúdo de `email-evento-lancamento.html` (as imagens já apontam para URLs públicas).
+3. Cole o HTML inteiro (as imagens já apontam para as URLs públicas — não precisa fazer upload de imagem no RD).
 4. Ajuste os links do item ⚠️ acima.
 5. O `*UUID*` do link de descadastro é substituído automaticamente pelo RD.
 
@@ -85,6 +89,9 @@ https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/eve
 https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/evento-lancamento/time-bilfor.jpg
 https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/footer-logos.png
 ```
+
+**Preview para aprovação (link para mandar no Slack):**
+<https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/evento-lancamento/preview-completo.jpg>
 
 ## Se a conta só tiver editor de blocos
 
@@ -106,6 +113,6 @@ https://raw.githubusercontent.com/rafaelas-web/elo28-email-lancamento/master/foo
 | 14. Imagem | `time-bilfor.jpg` |
 | 15. Texto | "Por trás de cada detalhe da noite, um time que acredita que empreendimento bom se constrói com gente boa. Obrigado a todos que estiveram com a gente." |
 | 16. Título pequeno + título | "AINDA DÁ TEMPO" / "Ficou com vontade de conhecer o Elo 28?" |
-| 17. Texto | "Boa parte das unidades saiu no lançamento, mas ainda tem opção para quem chegou agora. Fale com um assessor Bilfor e conheça as plantas, os valores e o que está disponível." |
-| 18. Botão | "FALAR COM UM ASSESSOR" → link |
+| 17. Texto | "Boa parte das unidades saiu no lançamento, mas ainda tem opção para quem chegou agora. Conheça as plantas, as áreas de lazer e as condições disponíveis." |
+| 18. Botão | "CONHEÇA O ELO 28" → landing page |
 | 19. Imagem + texto | `footer-logos.png` + legal/descadastro |
